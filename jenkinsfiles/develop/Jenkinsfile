@@ -13,7 +13,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
         // app = docker.build("d1")
-        sh "docker build -t d1 -m 128m -f ./dockerfiles/develop/Dockerfile ."
+        sh "docker build -t d1 -m 256m -f ./dockerfiles/develop/Dockerfile ."
     }
 
        stage('run') {
